@@ -488,8 +488,4 @@ async def help(ctx):
     await ctx.send(embed = embed)
 
 
-f = open('TOKEN.txt','r')
-token = f.read()
-f.close()
-
-client.run(token)
+client.login(process.env.TOKEN)
